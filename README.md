@@ -1,10 +1,18 @@
+<div align="center">
+
 # Nimbus — Dynamic Island for Windows
 
 A physics-animated **Dynamic Island** clone for Windows with real system integrations. Nimbus brings the elegant notification and status display from macOS to your Windows desktop with smooth spring animations, live media controls, system notifications, and more.
 
-![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Beta-yellow)
+<p>
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/status-Beta-yellow?style=for-the-badge" />
+</p>
+
+<img src="screenshots/snip_1.png" width="800" />
+
+</div>
 
 ## Features
 
@@ -71,45 +79,42 @@ make run
 
 ```
 nimbus/
-├── nimbus/
-│   ├── __main__.py          # Application entry point
-│   ├── app.py               # Qt application lifecycle
-│   ├── window.py            # Main window implementation
-│   ├── state.py             # Global application state
-│   ├── input.py             # Input handling
-│   ├── layout.py            # UI layout system
-│   ├── renderer.py          # Rendering pipeline
-│   ├── tray.py              # System tray integration
-│   │
-│   ├── core/                # Core animation system
-│   │   ├── animation.py     # Animation framework
-│   │   └── state.py         # Core state management
-│   │
-│   ├── modules/             # Feature modules
-│   │   ├── clock.py         # Time display
-│   │   ├── media.py         # Media playback control
-│   │   ├── notifications.py # Notification system
-│   │   ├── status.py        # System status display
-│   │   ├── timer.py         # Timer functionality
-│   │   └── permissions.py   # Permission management
-│   │
-│   ├── utils/               # Utility functions
-│   │   └── config.py        # Configuration management
-│   │
-│   └── animation/           # Animation utilities
-│
-├── tests/                   # Test suite
-│   ├── test_modules.py      # Module tests
-│   ├── test_spring.py       # Animation physics tests
-│   └── test_state.py        # State management tests
-│
-├── assets/                  # Application assets
-│   ├── fonts/               # Custom typefaces
-│   └── icons/               # Application icons
-│
-├── pyproject.toml           # Project configuration
-├── requirements.txt         # Runtime dependencies
-└── Makefile                 # Development commands
+├── assets
+│   ├── fonts
+│   │   └── font.ttf
+│   └── icons
+├── LICENSE
+├── Makefile
+├── nimbus
+│   ├── animation
+│   ├── app.py
+│   ├── core
+│   │   ├── animation.py
+│   │   └── state.py
+│   ├── input.py
+│   ├── layout.py
+│   ├── modules
+│   │   ├── clock.py
+│   │   ├── media.py
+│   │   ├── notifications.py
+│   │   ├── permissions.py
+│   │   ├── status.py
+│   │   └── timer.py
+│   ├── renderer.py
+│   ├── state.py
+│   ├── tray.py
+│   ├── utils
+│   │   └── config.py
+│   └── window.py
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+├── screenshots
+│   └── snip_1.png
+└── tests
+    ├── test_modules.py
+    ├── test_spring.py
+    └── test_state.py
 ```
 
 ### Development Commands
